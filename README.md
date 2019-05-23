@@ -6,7 +6,7 @@ It's a REST API, built with Node.js and Express. The project includes the follow
 - Get all books 
 - Get for books using a query fragment
 - Get a book using the ID
-- Add a book {WIP}
+- Add a book
 - Update a book {WIP}
 - Delete a book {WIP}
 
