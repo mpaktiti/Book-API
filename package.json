@@ -6,7 +6,7 @@
   "scripts": {
     "lint": "eslint .",
     "start": "nodemon app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "export ENV=Test && mocha tests/**/*Tests.js"
   },
   "keywords": [],
   "author": "",
@@ -23,7 +23,8 @@
     "eslint-plugin-import": "^2.17.2",
     "mocha": "^6.1.4",
     "should": "^13.2.3",
-    "sinon": "^7.3.2"
+    "sinon": "^7.3.2",
+    "supertest": "^4.0.2"
   },
   "nodemonConfig": {
     "restartable": "rs",
