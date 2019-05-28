@@ -7,11 +7,9 @@ const app = express();
 //const db = mongoose.connect('mongodb://localhost/bookAPI');
 console.log(`process.env.ENV = ${process.env.ENV}`);
 if (process.env.ENV === 'Test') {
-  console.log('This is a test');
   const db = mongoose.connect('mongodb://localhost/bookAPI_Test');
 } else {
-  console.log('This is for real');
-  const db = mongoose.connect('mongodb://localhost/bookAPI_Prod');
+  const db = mongoose.connect('mongodb://localhost/bookAPI');
 }
 
 const port = process.env.PORT || 3000;
